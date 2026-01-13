@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Sonorização | Eventos e Estruturas</title>
+  <link href="style.css" rel="stylesheet" />
+  <script defer type="module" src="https://cdn.jsdelivr.net/npm/lucide@0.245.0/dist/esm/lucide.js"></script>
+  
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">JS<span class="logo-highlight">S</span></a>
+      <nav class="desktop-menu">
+        <a href="#home">Início</a>
+        <a href="#services">Serviços</a>
+        <a href="#extras">Extras</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="menu-toggle" class="mobile-toggle" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav>
+        <a href="#home">Início</a>
+        <a href="#services">Serviços</a>
+        <a href="#extras">Extras</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank"><i data-lucide="instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i data-lucide="facebook"></i></a>
+        <a href="https://wa.me/5561982286637" target="_blank"><i data-lucide="phone"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="background-image"></div>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Seu Evento, Nossa <span class="highlight">Paixão</span></h1>
+        <p>Especialistas em sonorização, iluminação e estruturas para transformar qualquer ocasião em uma experiência inesquecível.</p>
+        <div class="btn-group">
+          <a href="#services" class="btn btn-primary">Veja Nossos Serviços</a>
+          <a href="#contato" class="btn btn-outline">Solicite um Orçamento</a>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#services"><i data-lucide="chevron-down"></i></a>
+      </div>
+    </section>
+
+    <section id="services" class="section animate-on-scroll">
+      <h2>Nossos <span>Serviços</span></h2>
+      <p class="section-description">Combinação perfeita entre tecnologia e criatividade para eventos de todos os tamanhos.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon"><i data-lucide="speaker"></i></div>
+          <h3>Sonorização Profissional</h3>
+          <p>Sistemas de áudio de alta performance que garantem clareza e potência, seja em pequenos eventos ou grandes shows.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i data-lucide="lightbulb"></i></div>
+          <h3>Iluminação &amp; Painéis</h3>
+          <p>Iluminação cênica e painéis de LED que realçam a atmosfera do seu evento com cores vibrantes e efeitos dinâmicos.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i data-lucide="layout-grid"></i></div>
+          <h3>Palcos &amp; Estruturas</h3>
+          <p>Estruturas modulares em alumínio, palcos e grids seguros para suportar todo tipo de produção com estabilidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="extras" class="more-services section animate-on-scroll">
+      <h2>Serviços <span>Adicionais</span></h2>
+      <p class="section-description">Muito além do som: soluções completas para o sucesso do seu evento.</p>
+      <div class="card-grid">
+        <div class="card">
+          <img src="Imagens/Gemini_Generated_Image_skpl4lskpl4lskpl.png" alt="Telão de LED">
+          <div class="card-body">
+            <h3>Telões de LED</h3>
+            <p>Locação de telões de LED em diversos tamanhos para apresentações de impacto e visibilidade perfeita.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Imagens/370225049_17992171373476552_8718390878346970173_n.jpg" alt="Segurança e Brigadistas">
+          <div class="card-body">
+            <h3>Segurança &amp; Brigadistas</h3>
+            <p>Equipes treinadas para garantir a segurança de participantes, com brigadistas e suporte preventivo.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Imagens/Palco Externo.png" alt="Estrutura de Delay">
+          <div class="card-body">
+            <h3>Estrutura de Delay</h3>
+            <p>Soluções de delay para distribuição uniforme do som em grandes áreas, mantendo a qualidade sonora.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Imagens/Geradores.png" alt="Geradores de Energia">
+          <div class="card-body">
+            <h3>Geradores de Energia</h3>
+            <p>Geradores de pequeno e grande porte para garantir energia ininterrupta em qualquer ocasião.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Imagens/Climatizadores.png" alt="Climatizadores e Ar">
+          <div class="card-body">
+            <h3>Climatizadores &amp; Ar</h3>
+            <p>Climatizadores evaporativos e ar-condicionado para proporcionar conforto térmico aos convidados.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Imagens/Fechamento.png" alt="Fechamentos e Alambrados">
+          <div class="card-body">
+            <h3>Fechamentos &amp; Alambrados</h3>
+            <p>Pisos tablados, alambrados e fechamentos que organizam o espaço e garantem segurança no evento.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Imagens/Grid.png" alt="Grids e Stands">
+          <div class="card-body">
+            <h3>Grids &amp; Stands</h3>
+            <p>Estruturas em alumínio Q30/Q50, stands e camarins modulares para exposições e feiras.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Imagens/Climatizadores 2.png" alt="Mesas e Tendas">
+          <div class="card-body">
+            <h3>Mesas, Cadeiras &amp; Tendas</h3>
+            <p>Aluguel de mesas, cadeiras, tendas e coberturas para acomodar todos com conforto e estilo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="section animate-on-scroll">
+      <h2>Nossos <span>Diferenciais</span></h2>
+      <p class="section-description">O que nos torna referência no mercado de eventos e locações.</p>
+      <div class="container">
+        <ul class="feature-list">
+          <li><i data-lucide="check-circle"></i> Anos de experiência proporcionando soluções personalizadas para cada cliente.</li>
+          <li><i data-lucide="check-circle"></i> Equipamentos modernos e mantidos periodicamente para máxima confiabilidade.</li>
+          <li><i data-lucide="check-circle"></i> Equipe multidisciplinar com técnicos, engenheiros de som e produtores.</li>
+          <li><i data-lucide="check-circle"></i> Atendimento ágil e suporte 24h para imprevistos durante o evento.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="galeria" class="section animate-on-scroll">
+      <h2>Nossa <span>Galeria</span></h2>
+      <p class="section-description">Confira alguns momentos que ajudamos a tornar especiais.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="Imagens/Palco Interno.png" alt="Palco interno">
+          <div class="overlay">
+            <h3>Palco Interno</h3>
+            <p>Estrutura completa com LED, iluminação e sonorização.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="Imagens/Palco Externo.png" alt="Show ao ar livre">
+          <div class="overlay">
+            <h3>Show ao Ar Livre</h3>
+            <p>Palco externo com cobertura e painel de LED para grandes públicos.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="Imagens/Grid.png" alt="Entrada do Evento">
+          <div class="overlay">
+          <h3>Entrada do Evento</h3>
+          <p>Portais e grids de acesso com identidade visual personalizada.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="Imagens/Geradores.png" alt="Geradores">
+          <div class="overlay">
+            <h3>Energia Garantida</h3>
+            <p>Geradores prontos para assegurar energia durante toda a programação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section animate-on-scroll">
+      <h2>Entre em <span>Contato</span></h2>
+      <p class="section-description">Solicite um orçamento sem compromisso ou tire suas dúvidas.</p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Contato</h3>
+          <div class="info-item">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <h4>Localização</h4>
+              <p>Valparaíso de Goiás</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i data-lucide="mail"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:jssonorizacao965@gmail.com">jssonorizacao965@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i data-lucide="phone"></i>
+            <div>
+              <h4>Telefone</h4>
+              <a href="tel:+5561982286637">(61) 98228-6637</a>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i data-lucide="instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i data-lucide="facebook"></i></a>
+            <a href="https://wa.me/5561982286637" target="_blank"><i data-lucide="phone"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form id="contact-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required />
+            <label for="service-options">Serviços de Interesse</label>
+            <div id="service-options" class="service-options">
+              <label><input type="checkbox" value="Sonorização Profissional" /> Sonorização Profissional</label>
+              <label><input type="checkbox" value="Iluminação e Painéis de LED" /> Iluminação e Painéis de LED</label>
+              <label><input type="checkbox" value="Palcos e Estruturas" /> Palcos e Estruturas</label>
+              <label><input type="checkbox" value="Telões de LED" /> Telões de LED</label>
+              <label><input type="checkbox" value="Segurança e Brigadistas" /> Segurança e Brigadistas</label>
+              <label><input type="checkbox" value="Estrutura de Delay" /> Estrutura de Delay</label>
+              <label><input type="checkbox" value="Geradores de Energia" /> Geradores de Energia</label>
+              <label><input type="checkbox" value="Climatizadores e Ar" /> Climatizadores e Ar</label>
+              <label><input type="checkbox" value="Fechamentos e Alambrados" /> Fechamentos e Alambrados</label>
+              <label><input type="checkbox" value="Grids e Stands" /> Grids e Stands</label>
+              <label><input type="checkbox" value="Mesas, Cadeiras e Tendas" /> Mesas, Cadeiras e Tendas</label>
+            </div>
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Descreva detalhes do seu evento"></textarea>
+            <button type="submit" class="btn btn-primary">Enviar via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">JS<span class="logo-highlight">S</span></div>
+    <p>&copy; 2026 JS Sonorização. Todos os direitos reservados.</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top">
+    <i data-lucide="chevron-up"></i>
+  </button>
+</body>
+</html>
